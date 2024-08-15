@@ -1,0 +1,52 @@
+{
+  "name": "bat-publisher",
+  "version": "2.2.1",
+  "description": "Routines to identify publishers for the BAT.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "test": "npm run test-security; npm run test-logic",
+    "test-security": "npm audit",
+    "test-logic": "tap test",
+    "build-rules": "node tools/build-rules.js > rules/index.js",
+    "rebuild-rules": "node tools/rebuild-rules.js categories/rulesets.json > rules/index.js",
+    "make-bootstrap": "node tools/make-bootstrap.js > bootstrap.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brave-intl/bat-publisher"
+  },
+  "author": "Brave Developers <support@brave.com>",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/brave-intl/bat-publisher/issues"
+  },
+  "homepage": "https://github.com/brave-intl/bat-publisher",
+  "dependencies": {
+    "@ambassify/backoff-strategies": "1.0.0",
+    "async": "^2.5.0",
+    "brave-crypto": "^0.2.1",
+    "data-expression": "1.0.0",
+    "glob": "^7.1.2",
+    "jimp": "^0.13.0",
+    "joi": "^13.1.2",
+    "jsdom": "11.2.0",
+    "node-cache": "4.1.1",
+    "parse-cache-control": "1.0.1",
+    "tldjs": "2.2.0",
+    "underscore": "1.12.1",
+    "underscore.string": "^3.3.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.0",
+    "oembed-parser": "^1.0.8",
+    "standard": "^14.3.4",
+    "tap": "^14.10.7"
+  },
+  "standard": {
+    "ignore": [
+      "bootstrap.js"
+    ],
+    "parser": "babel-eslint"
+  }
+}
