@@ -28,7 +28,7 @@
     "brave-crypto": "^0.2.1",
     "data-expression": "1.0.0",
     "glob": "^7.1.2",
-    "jimp": "^0.13.0",
+    "jimp": "^0.22.12",
     "joi": "^13.1.2",
     "jsdom": "11.2.0",
     "node-cache": "4.1.1",
