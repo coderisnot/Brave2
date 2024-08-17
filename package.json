@@ -31,7 +31,7 @@
     "jimp": "^0.13.0",
     "joi": "^13.1.2",
     "jsdom": "11.2.0",
-    "node-cache": "4.1.1",
+    "node-cache": "4.2.1",
     "parse-cache-control": "1.0.1",
     "tldjs": "2.2.0",
     "underscore": "1.12.1",
